@@ -1,0 +1,158 @@
+.box{
+    width: 400px;
+    height: 350px;
+    background-color: honeydew;
+    border-radius: 10px;
+    margin: auto;
+}
+.t1{
+    width: 350px;
+    height: 45px;
+    border: 3px ;
+    border: 5px solid whitesmoke;
+    margin-top: 20px;
+    margin-left: 25px;
+}
+.t2{
+   width: 350px;
+    height: 45px;
+    border: 3px ;
+    border: 5px solid whitesmoke;
+    margin-top: 10px;
+    margin-left: 25px; 
+}
+.t3{
+     width: 350px;
+    height: 45px;
+    border: 3px ;
+    border: 5px solid whitesmoke;
+    margin-top: 10px;
+    margin-left: 25px; 
+}
+.bt{
+      width: 350px;
+    height: 45px;
+    border: 3px ;
+    border: 1px solid whitesmoke;
+    background-color: aquamarine;
+    color: blue;
+    margin-top: 10px;
+    margin-left: 25px; 
+}
+.bgter{
+   text-align: center;
+   font-size: xx-large;
+   color: cornflowerblue;
+}
+.p{
+    width: 450px;
+    height: 45px;
+    text-align: center;
+    margin: auto;
+    color: cornflowerblue;
+}
+
+
+
+
+@media (max-width: 576px) {
+  .box {
+    width: 90%;
+    height: auto;
+    padding: 15px;
+    margin: 20px auto;
+    background-color: honeydew;
+    border-radius: 10px;
+  }
+
+  .t1, .t2, .t3 {
+    width: 100%;
+    height: 45px;
+    border: 2px solid whitesmoke;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 1rem;
+    box-sizing: border-box;
+  }
+
+  .bt {
+    width: 100%;
+    height: 45px;
+    background-color: aquamarine;
+    color: blue;
+    border: none;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-top: 10px;
+    margin-left:0;
+    cursor: pointer;
+  }
+
+  .bgter {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 15px;
+    color: cornflowerblue;
+  }
+
+  .p {
+    width: 90%;
+    font-size: 0.95rem;
+    text-align: center;
+    margin: 10px auto;
+    color: cornflowerblue;
+  }
+
+  .table {
+    font-size: 0.8rem;
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .table th, .table td {
+    padding: 6px;
+    text-align: center;
+  }
+
+  .container {
+    padding: 0 10px;
+  }
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: radial-gradient(circle at center, #f0f9ff, #eaf6ff);
+  
+}
+
+.floating-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -10;
+  pointer-events: none;
+}
+
+.emoji {
+  position: absolute;
+  font-size: 1.5rem;
+  animation: float 12s ease-in-out infinite;
+  opacity: 0.3;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(100vh) scale(0.4);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(-10vh) scale(0.6);
+    opacity: 0;
+  }
+}
